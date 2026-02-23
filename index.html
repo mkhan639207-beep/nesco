@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DisposalPro | Waste Management Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: #0f172a;
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #22c55e;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)),
+        url('https://source.unsplash.com/1600x900/?garbage,truck') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #22c55e;
+      color: #0f172a;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #16a34a;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #0f172a;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-container img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px 15px;
+      color: #16a34a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-container img {
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <div>
+    <h1>DisposalPro</h1>
+    <p>Professional, reliable, and eco-friendly waste disposal solutions for homes and businesses.</p>
+    <a href="#contact" class="btn">Request a Quote</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about-container">
+    <img src="https://source.unsplash.com/600x600/?recycling,workers" alt="Company Photo Placeholder">
+    <div class="about-text">
+      <p>
+        DisposalPro is a trusted waste management company dedicated to keeping communities clean and environmentally responsible.
+        We provide efficient residential and commercial disposal services tailored to your needs.
+      </p>
+      <p>
+        With modern equipment and a professional team, we ensure safe, timely, and eco-conscious waste handling.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?garbage,collection" alt="Service Image">
+      <h3>Residential Waste</h3>
+      <p>Reliable home garbage collection and recycling services.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?construction,waste" alt="Service Image">
+      <h3>Construction Debris</h3>
+      <p>Safe removal of construction and demolition materials.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?recycling,plant" alt="Service Image">
+      <h3>Recycling Services</h3>
+      <p>Eco-friendly recycling solutions for businesses and homes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <p>Ready to schedule a pickup or need a custom disposal plan?</p>
+    <a href="mailto:info@disposalpro.com">Email: info@disposalpro.com</a>
+    <a href="#">Phone: +1 (000) 000-0000</a>
+    <a href="#">Location: Your City, Country</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 DisposalPro. All Rights Reserved.
+</footer>
+
+</body>
+</html>
